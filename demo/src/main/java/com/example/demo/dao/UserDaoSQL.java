@@ -16,7 +16,7 @@ import java.util.UUID;
 public class UserDaoSQL implements UserDao{
     private static final Connection conn = DatabaseConnection.getConnection();
 
-    public static boolean isEmail(String s) { //TODO: implementirati gde treba
+    public static boolean isEmail(String s) {
         return s.matches("^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\\.[a-zA-Z]{2,4}");
     }
 
